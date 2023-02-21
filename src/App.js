@@ -1,29 +1,26 @@
 import './App.css';
 import Header from './Header/Header';
-import Shop from './Header/Header-komponents/Shop';
 import Aboute from './Header/Header-komponents/Aboute';
 import Home from './Header/Header-komponents/Home';
-import React, { useState } from 'react';
-import { Routes, Route, Link } from 'react-router-dom';
+import Footer from './Footer/Footer';
+import { Routes, Route} from 'react-router-dom';
 import Main from './Main/Main';
-
-
-
+import MainBoxToysCard from './Main/MainBoxToys/MainBoxToysCard';
 
 
 function App() {
-  const [count, setCount] = useState(0);
-  const handleButtonClick = () => {
-    setCount(count + 1);
-  };
+
   return (
     <div className="App">
-        <Header count={count} />
+        <Header />
         <Routes>
           <Route path='/' element={<Home />}/>
-          <Route path='/shop' element={<Main handleButtonClick={handleButtonClick}/>}/>
+          <Route path='/shop' element={<Main />}/>
           <Route path='/aboute' element={<Aboute />}/>
+          <Route path='/shop/:id' element={<MainBoxToysCard />}/>
         </Routes>
+        <Footer />
+
     </div>
   );
 }

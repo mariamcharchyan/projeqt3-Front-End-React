@@ -1,16 +1,16 @@
 
-// import toyslogo from './nkar/logo2.png';
-// import zambyux1 from './nkar/zambyux1.png';
+import logo from './logo.png';
+import basket from './basket.png';
 import {Link } from 'react-router-dom';
 
-export default function Header({count}) {
+export default function Header() {
 return(
     <><header className="App-header">
         <div className="nav_Bar">
             <div className="nav_Bar_Left">
                 <div className="nav-Left_Items">
                     <div className="nav-img">
-                        <img src='./nkar/logo2.png' className="brand-logo" alt="Logo"/>
+                        <img src= {logo} className="brand-logo" alt="Logo"/>
                     </div>
                     <div className="nav-Left-Text">
                         <Link to="/" className="link">Home</Link>
@@ -31,8 +31,8 @@ return(
                         <input  className="search-box" type="text"  placeholder="Search"/>
                     </div>
                     <div className="nac_basket-img">
-                        <img src='./nkar/zambyux1.png' className="basket-img" alt=""/>
-                        <div id="zambyux">{count}</div>
+                        <img src={basket} className="basket-img" alt=""/>
+                        <div id="zambyux">0</div>
                     </div>
                 </div>
             </div>

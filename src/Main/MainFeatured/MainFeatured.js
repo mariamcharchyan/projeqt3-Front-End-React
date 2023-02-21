@@ -1,9 +1,13 @@
+import f1 from './pictures/f1.jpg'
+import f2 from './pictures/f2.jpeg'
+import f3 from './pictures/f3.jpeg'
+
 export default function MainFeatured(){
     return(
         <>
             <div className="box-featured1">
                 <div className="box-featured2">
-                    <img src='./nkar/f1.jpg' alt="" />
+                    <img src={f1} alt="" />
                 </div>  
                 <div className="box-featured3">  
                     <p className="toy-name-featured">Developing cabin</p>
@@ -12,7 +16,7 @@ export default function MainFeatured(){
             </div>  
             <div className="box-featured1">
                 <div className="box-featured2">
-                    <img src='./nkar/f2.jpeg' alt="" />
+                    <img src={f2} alt="" />
                 </div>  
                 <div className="box-featured3">  
                     <p className="toy-name-featured">Ice cream machine</p>
@@ -21,7 +25,7 @@ export default function MainFeatured(){
             </div> 
             <div className="box-featured1">
                 <div className="box-featured2">
-                    <img src='./nkar/f3.jpeg' alt="" />
+                    <img src={f3} alt="" />
                 </div>  
                 <div className="box-featured3">  
                     <p className="toy-name-featured">Mini kitchen</p>

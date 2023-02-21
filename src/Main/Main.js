@@ -4,7 +4,7 @@ import MainFeatured from './MainFeatured/MainFeatured';
 
 
 
-export default function Main({ handleButtonClick }) {
+export default function Main() {
 return(
 <>
 <main className="App-main">
@@ -24,8 +24,8 @@ return(
             <MainFeatured />
         </div>
     </div>
-    <div id="box-toys1" className="box-toys1">
-    <MainBoxToys handleButtonClick={handleButtonClick}/>
+    <div id="box-toys" className="box-toys">
+    <MainBoxToys />
     </div>
 </div>
 </main>
