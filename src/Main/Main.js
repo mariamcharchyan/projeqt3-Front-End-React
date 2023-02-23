@@ -13,11 +13,6 @@ return(
         <div className="categories">
             <h3>Categories</h3>
             <Categories />
-            {/* <li><a href="#" className="link-categories">All Products</a></li>
-            <li><a href="#" className="link-categories">Toys for BOYS</a></li>
-            <li><a href="#" className="link-categories">Toys for GIRLS</a></li>
-            <li><a href="#" className="link-categories">Educational toys</a></li>
-            <li><a href="#" className="link-categories">Logical toys</a></li> */}
         </div>
         <div className="featured">
             <h3>Featured</h3>
@@ -25,7 +20,7 @@ return(
         </div>
     </div>
     <div id="box-toys" className="box-toys">
-    <MainBoxToys />
+        <MainBoxToys />
     </div>
 </div>
 </main>
