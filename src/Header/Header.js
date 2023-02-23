@@ -2,6 +2,9 @@
 import logo from './logo.png';
 import basket from './basket.png';
 import {Link } from 'react-router-dom';
+import { TfiAlignJustify } from "react-icons/tfi";
+import { GoX } from "react-icons/go";
+
 
 export default function Header() {
 return(
@@ -19,6 +22,12 @@ return(
                         <Link to="aboute" className="link">About</Link>
                         <Link to="#" className="link">Contact</Link>
                     </div>
+                </div>
+            </div>
+            <div className='responsiv-nav-bar'>
+                <div className='header-bar-button'>
+                    <TfiAlignJustify className='social-icon'/>
+                    {/* <GoX className='social-icon'/> */}
                 </div>
             </div>
             <div className="nav_Bar_Right">

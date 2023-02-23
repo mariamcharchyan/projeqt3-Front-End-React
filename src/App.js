@@ -1,6 +1,6 @@
 import './App.css';
 import Header from './Header/Header';
-import Aboute from './Header/Header-komponents/Aboute';
+import Aboute from './Header/Header-komponents/Aboute/Aboute';
 import Home from './Header/Header-komponents/Home/Home';
 import Footer from './Footer/Footer';
 import { Routes, Route} from 'react-router-dom';

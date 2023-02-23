@@ -1,13 +1,14 @@
 .home{
+    /* background-color: #16445b30; */
     height: 100%;
     width: 100%;
     display: flex;
     justify-content: space-around;
 }
 .home-container{
-    height: 150px;
-    width: 450px;
-    margin: 10%;
+    height: 450px;
+    width: 1200px;
+    margin-bottom: 5%;
     display: flex;
     align-items: center;
 }
@@ -15,7 +16,6 @@
     height: 100%;
     width: 100%;
     overflow: hidden;
-
 }
 .all-pages-container{
     height: 100%;
@@ -26,7 +26,12 @@
     transition-duration: 300ms;
     transition-timing-function: ease-in-out;
 }
-
 .arrow{
     cursor: pointer;
+    color: #353069;
+    font-size: 25px;
+}
+.arrow:hover{
+    transform: scale(2);
+    transition: all 0.1s;
 }
